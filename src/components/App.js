@@ -25,7 +25,7 @@ class App extends React.Component {
             </Row>
         </Container>
         <Container >
-            <Row>
+            <Row className="menu">
                 <Col  xs="3">
                 <Link to='/'>Hem</Link>
                 </Col>
