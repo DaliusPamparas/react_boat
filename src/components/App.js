@@ -20,6 +20,7 @@ class App extends React.Component {
             <Row>
                 <Col  xs="12" className="header">
                     <h1>bygg din boat</h1>
+                    
                 </Col>
                 
             </Row>
