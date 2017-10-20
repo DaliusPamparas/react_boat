@@ -56,13 +56,13 @@ class App extends React.Component {
             </Row>
         </Container>
           </div>
-        <div>
+       {/*  <div>
           Cars info 
             <CarsList/>
 
           Details
            <Details/>
-        </div>
+        </div> */}
         
       </div>
     );

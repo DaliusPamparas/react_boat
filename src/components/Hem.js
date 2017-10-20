@@ -1,10 +1,12 @@
 import React from 'react';
+import BoatsList from '../containers/boat-list';
 
 
 const Hem = () => (
  <div>
-     Hem blir here blir here
-   
+     Här some text om vara boats Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+     Voluptates reprehenderit tenetur deleniti, eos iure ecusandae explicabo ad. Beatae, facilis.
+    <BoatsList/>
  </div>
 )
 
