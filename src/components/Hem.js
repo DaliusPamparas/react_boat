@@ -1,12 +1,16 @@
 import React from 'react';
 import BoatsList from '../containers/boat-list';
+import { Container,  Row } from 'reactstrap';
 
 
 const Hem = () => (
  <div>
      Här some text om vara boats Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
      Voluptates reprehenderit tenetur deleniti, eos iure ecusandae explicabo ad. Beatae, facilis.
-    <BoatsList/>
+    <div className="boatsContent">
+       <BoatsList />
+    </div>
+    
  </div>
 )
 

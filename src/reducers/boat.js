@@ -8,7 +8,8 @@ export default function() {
             desc: "Pegazus 550 är en modern motorbåt med ergonomiskt utformad hytt.",
             img: "http://www.pegazus.se/files/550.jpg",
             price: 150000,
-            motor: "Yamaha 100standart"
+            motor: "Yamaha 100standart",
+            hp: 200
         },
         {
             id:2,
@@ -18,7 +19,8 @@ export default function() {
             desc: "Pegazus 560 560 560 560 560 560 560 560 skrovet och bredden.",
             img: "http://www.pegazus.se/files/560.jpg",
             price: 170000,
-            motor: "Yamaha 100standart"
+            motor: "Yamaha 100standart",
+            hp: 200
         },
         {
             id:3,
@@ -28,7 +30,8 @@ export default function() {
             desc: "Pegazus 570 570 570  570 570 570 .Det innovativt utformade skrovet .",
             img: "http://www.pegazus.se/files/550.jpg",
             price: 170000,
-            motor: "Yamaha 100standart"
+            motor: "Yamaha 100standart",
+            hp: 200
         }
 
         

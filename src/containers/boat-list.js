@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import{bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {selectBoats} from '../actions/index';
-import {Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 
@@ -12,22 +12,23 @@ class BoatsList extends Component {
     showBoatsList () {
         return this.props.boats.map ((boat) => {
             return (
-                <div className="boatlabel" >
-                    
-                    <Card>
-                        <CardImg top width="100%" src={boat.img} alt={"our boat "+boat.name} />
+               
+                   
+                <Col xs="3" > 
+                    <Card >
+                        <CardImg top  src={boat.img} alt={"our boat "+boat.name} />
                         <CardBody>
-                        <CardTitle>{boat.name}</CardTitle>
-                        <CardSubtitle>{boat.price} kr.</CardSubtitle>
-                        <CardText>{boat.desc}</CardText>
-                        <Button>Button</Button>
+                            <CardTitle>{boat.name}</CardTitle>
+                            <CardSubtitle>{boat.price} kr.</CardSubtitle>
+                            <CardText>{boat.desc}</CardText>
+                            <Button >Bygg boat</Button>
                         </CardBody>
                     </Card>
                                       
+               </Col>
+                
                        
-                       
-        
-                </div>
+       
                
             );
 
@@ -36,12 +37,14 @@ class BoatsList extends Component {
     
     render (){
         return (
-           <Row> 
-                <Col xs="3">
+           
+            <Container> 
+                <Row>
+                 {this.showBoatsList ()}
+               </Row>
+            </Container>
                    
-                    {this.showBoatsList ()}
-                </Col>
-           </Row>
+                    
         );
     }
 }
