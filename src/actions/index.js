@@ -15,3 +15,12 @@ export const selectBoats = (boat) => {
       payload: boat 
   }
 };
+
+export const selectMotors = (motor) => {
+  
+  return {
+     //function actioncreater 
+      type: "Boat_SELECTED",
+      payload: motor 
+  }
+};

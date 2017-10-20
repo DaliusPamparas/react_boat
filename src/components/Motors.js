@@ -1,8 +1,9 @@
 import React from 'react';
+import MotorsList from '../containers/motor-list'
 
 const Motors = () => (
  <div>
-     Motors blir here
+    <MotorsList/>
  </div>
 )
 
