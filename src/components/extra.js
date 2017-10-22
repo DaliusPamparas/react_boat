@@ -1,7 +1,7 @@
 <Container fluid>
 <Row>
     <Col  xs="12">
-        <h1>bygg din boat</h1>
+        <h1>bygg din boat </h1>
     </Col>
     
 </Row>

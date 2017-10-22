@@ -2,7 +2,7 @@ import React from 'react';
 
 const Farjer = () => (
  <div>
-     Farjer blir here
+     Farjer blir here mhmh
  </div>
 )
 
