@@ -11,3 +11,10 @@
 .boatsContent {
   margin-top: 30px;
   margin-bottom: 30px; }
+
+.actualboat {
+  background-color: #dbe8eb;
+  border-radius: 10px; }
+
+.contentActual {
+  padding: 20px; }
