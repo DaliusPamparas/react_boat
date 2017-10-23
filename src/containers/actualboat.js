@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {connect} from 'react-redux';
 
 class Actualboat extends Component {
   render(){
@@ -7,16 +7,28 @@ class Actualboat extends Component {
 
       return (
           <div className="contentActual">
-              Actual boat 
+              <div>
+              <h2>
+                  {this.props.boat.name}
+              </h2>
+              </div>
+              <div>
+              Weight: {this.props.boat.weight} t.
+              
+              </div>
+              <div>
+              Weight: {this.props.boat.weight} t.
+              
+              </div>
           </div>
       );
   }  
 }
 function mapStateToProps (state){
     return {
-       car: state.active
+       boat: state.activeboat
     };  
   }
 
-export default Actualboat;
+  export default connect (mapStateToProps)(Actualboat);
 
