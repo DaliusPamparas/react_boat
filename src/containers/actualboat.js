@@ -19,3 +19,4 @@ function mapStateToProps (state){
   }
 
 export default Actualboat;
+
