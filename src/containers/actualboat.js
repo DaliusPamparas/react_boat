@@ -7,7 +7,7 @@ class Actualboat extends Component {
 
       return (
           <div>
-              Actual boat
+              Actual boat 
           </div>
       );
   }  

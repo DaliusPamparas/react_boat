@@ -1,6 +1,6 @@
 import React from 'react';
 import BoatsList from '../containers/boat-list';
-import { Container,  Row } from 'reactstrap';
+
 
 
 const Hem = () => (
