@@ -6,10 +6,10 @@ import ActualBoat from '../containers/actualboat';
 const Motors = () => (
  <div>
   <Row>
-    <Col xs="8">
+    <Col xs="10">
          <MotorsList/>
     </Col>
-    <Col xs="4">
+    <Col xs="2">
       <ActualBoat/>
     </Col>
     </Row>

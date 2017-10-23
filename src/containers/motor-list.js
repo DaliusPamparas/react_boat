@@ -13,7 +13,7 @@ class MotorsList extends Component {
             return (
                
                    
-                <Col xs="3" > 
+                <Col xs="4" > 
                         <img src={motor.img} width="150px"  alt={"our motor "+motor.name}/>
                        
                       
