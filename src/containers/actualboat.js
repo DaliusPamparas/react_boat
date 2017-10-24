@@ -3,7 +3,9 @@ import {connect} from 'react-redux';
 
 class Actualboat extends Component {
   render(){
-     
+    if (!this.props.boat){
+        return ( <p>Välj boat först </p>);
+    }
 
       return (
           <div className="contentActual">
