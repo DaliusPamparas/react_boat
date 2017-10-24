@@ -5,6 +5,7 @@ import BoatsReducers from './boat';
 import MotorsReducers from './motor';
 import ActiveBoat from './boat-active';
 import Motor_showinfo from './motor_showinfo';
+import Motor_add from './motor_add';
 
 
 
@@ -14,7 +15,7 @@ const allReducers = combineReducers ({
   boats: BoatsReducers,
   motors: MotorsReducers,
   activeboat: ActiveBoat,
-  motor_showinfo: Motor_showinfo
+  motor_showinfo: Motor_showinfo  
 });
 
 
