@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import{bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {selectMotors} from '../actions/index';
+
 import {showMotorInfo} from '../actions/index';
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardBody,
@@ -25,7 +25,7 @@ class MotorsList extends Component {
                             <CardTitle>{motor.name}</CardTitle>
                             <CardSubtitle>{motor.priceplus} kr.</CardSubtitle>
                            
-                            <Button className="btn"  onClick={() => this.props.addMotor (motor)} key={motor.id}>Add</Button>
+                            <Button className="btn" >Add</Button>
                             <Button className="btnSecond"  onClick={() => this.props.showMotorInfo (motor)} key={motor.id} >Details</Button>
                             
                         </CardBody>
@@ -63,8 +63,7 @@ function mapStateToProps (state){
 }
 
 function matchDispatchToProps (dispatch){
-    return bindActionCreators({selectMotors: selectMotors,
-                               showMotorInfo: showMotorInfo
+    return bindActionCreators({showMotorInfo: showMotorInfo
     }, dispatch)
 }
 

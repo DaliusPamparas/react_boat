@@ -32,3 +32,4 @@ export const addMotor = (motor) => {
       payload: motor 
   }
 };
+
