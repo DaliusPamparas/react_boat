@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
+
 class Motorshowinfo extends Component {
     render(){
         if (!this.props.motor){
@@ -8,7 +9,7 @@ class Motorshowinfo extends Component {
         }
   
         return (
-            <div>
+            <div className="motordetails">
                 <h2>
                     {this.props.motor.name}
                 </h2>
