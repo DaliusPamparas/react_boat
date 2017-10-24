@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {selectMotors} from '../actions/index';
 import {showMotorInfo} from '../actions/index';
 import { Container, Row, Col } from 'reactstrap';
-import { Card, CardImg, CardLink, CardText, CardBody,
+import { Card, CardImg, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 
@@ -28,7 +28,7 @@ class MotorsList extends Component {
                             <Button className="btn">
                                Add
                             </Button>
-                            <CardLink   onClick={() => this.props.showMotorInfo (motor)} key={motor.id} >Details</CardLink>
+                            <Button className="btnSecond"  onClick={() => this.props.showMotorInfo (motor)} key={motor.id} >Details</Button>
                             
                         </CardBody>
                     </Card>

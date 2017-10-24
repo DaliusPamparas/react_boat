@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
-import{bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {selectMotors} from '../actions/index';
-import {showMotorInfo} from '../actions/index';
-import { Container, Row, Col } from 'reactstrap';
-
-
 
 class Motorshowinfo extends Component {
     render(){

@@ -21,7 +21,7 @@ class BoatsList extends Component {
                             <CardTitle>{boat.name}</CardTitle>
                             <CardSubtitle>{boat.price} kr.</CardSubtitle>
                             <CardText>{boat.desc}</CardText>
-                              <Button  onClick={() => this.props.selectBoats (boat)} key={boat.id}>
+                              <Button  className="btn" onClick={() => this.props.selectBoats (boat)} key={boat.id}>
                               <Link to='/motors'>Bygg boat</Link>
                             </Button>
                         </CardBody>

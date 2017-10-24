@@ -8,6 +8,7 @@
 .menu{
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 30px;
 }
 
 .boatsContent{
@@ -25,9 +26,23 @@
 }
 
 .motorimg{
- width: 60%;
+ width: 50%;
  margin: 40px;
 }
 .btn{
+ 
+  background-color: #3082c5;
+}
+
+.btn a{
+  color: white;
+  text-decoration: none;
+
+}
+
+.btnSecond {
   margin: 10px;
+  background-color: #a6cfe2;
+  color: rgb(16, 64, 87);
+  border: 1px solid #a6cfe2;
 }
