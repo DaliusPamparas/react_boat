@@ -24,3 +24,11 @@ export const selectMotors = (motor) => {
       payload: motor 
   }
 };
+export const showMotorInfo = (motor) => {
+  
+  return {
+     //function actioncreater 
+      type: "Motor_showinfo",
+      payload: motor 
+  }
+};

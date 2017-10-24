@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import{bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {selectMotors} from '../actions/index';
+import {showMotorInfo} from '../actions/index';
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
@@ -25,7 +26,7 @@ class MotorsList extends Component {
                             <Button className="btn">
                                Add
                             </Button>
-                            <Button >
+                            <Button  onClick={() => this.props.showMotorInfo (motor)} key={motor.id}>
                                Details
                             </Button>
                         </CardBody>
@@ -63,7 +64,9 @@ function mapStateToProps (state){
 }
 
 function matchDispatchToProps (dispatch){
-    return bindActionCreators({selectMotors: selectMotors}, dispatch)
+    return bindActionCreators({selectMotors: selectMotors,
+                               showMotorInfo: showMotorInfo
+    }, dispatch)
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(MotorsList);
