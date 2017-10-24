@@ -16,19 +16,19 @@ export const selectBoats = (boat) => {
   }
 };
 
-export const selectMotors = (motor) => {
-  
-  return {
-     //function actioncreater 
-      type: "Boat_SELECTED",
-      payload: motor 
-  }
-};
 export const showMotorInfo = (motor) => {
   
   return {
      //function actioncreater 
       type: "Motor_showinfo",
+      payload: motor 
+  }
+};
+export const addMotor = (motor) => {
+  
+  return {
+     //function actioncreater 
+      type: "Motor_add",
       payload: motor 
   }
 };

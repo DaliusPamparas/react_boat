@@ -25,9 +25,7 @@ class MotorsList extends Component {
                             <CardTitle>{motor.name}</CardTitle>
                             <CardSubtitle>{motor.priceplus} kr.</CardSubtitle>
                            
-                            <Button className="btn">
-                               Add
-                            </Button>
+                            <Button className="btn"  onClick={() => this.props.addMotor (motor)} key={motor.id}>Add</Button>
                             <Button className="btnSecond"  onClick={() => this.props.showMotorInfo (motor)} key={motor.id} >Details</Button>
                             
                         </CardBody>
