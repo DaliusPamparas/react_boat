@@ -8,17 +8,22 @@ class Actualboat extends Component {
       return (
           <div className="contentActual">
               <div>
-              <h2>
                   {this.props.boat.name}
-              </h2>
               </div>
               <div>
-              Weight: {this.props.boat.weight} t.
-              
+                 Längd: {this.props.boat.Längd} m.
               </div>
               <div>
-              Weight: {this.props.boat.weight} t.
-              
+                 Weight: {this.props.boat.weight} t.
+              </div>
+              <div>
+                 Motor: {this.props.boat.motor} 
+              </div>
+              <div>
+                 HP: {this.props.boat.hp} 
+              </div>
+              <div>
+                 Pris: {this.props.boat.price} kr.
               </div>
           </div>
       );

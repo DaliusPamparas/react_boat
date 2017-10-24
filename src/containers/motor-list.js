@@ -3,7 +3,8 @@ import{bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {selectMotors} from '../actions/index';
 import { Container, Row, Col } from 'reactstrap';
-
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 
 class MotorsList extends Component {
@@ -14,12 +15,22 @@ class MotorsList extends Component {
                
                    
                 <Col xs="4" > 
-                        <img src={motor.img} width="150px"  alt={"our motor "+motor.name}/>
-                       
-                      
-                          Details
-                      
-                    
+
+                     <Card >
+                        <CardImg className="motorimg" top  src={motor.img}  alt={motor.name} />
+                        <CardBody>
+                            <CardTitle>{motor.name}</CardTitle>
+                            <CardSubtitle>{motor.priceplus} kr.</CardSubtitle>
+                           
+                            <Button className="btn">
+                               Add
+                            </Button>
+                            <Button >
+                               Details
+                            </Button>
+                        </CardBody>
+                    </Card>
+                  
                                       
                </Col>
                 

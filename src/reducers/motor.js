@@ -7,7 +7,7 @@ export default function() {
             name: "Yamaha 200 soul",
             desc: "lorem ipsum Yamaha Yamaha Yamaha Yamaha Yamaha Yamaha some text about Yamaha Yamaha Yamaha Yamaha some text about",
             hp: 200,
-            img: "http://www.nauticalventures.com/static/sitefiles/engines/yamaha/F150-jetdrive.jpg",
+            img: "http://www.nauticalventures.com/static/sitefiles/engines/yamaha/VF250SHO-V6.jpg",
         },
         {
             id:2,
@@ -25,7 +25,7 @@ export default function() {
             name: "Volvo Penta 300 ",
             desc: "lorem ipsumVolvo Penta Volvo Penta Volvo Penta Volvo Penta Volvo Penta Volvo Penta some text about",
             hp: 300,
-            img: "http://www.nauticalventures.com/static/sitefiles/engines/yamaha/F150-jetdrive.jpg",
+            img: "http://www.nauticalventures.com/static/sitefiles/engines/yamaha/VF250SHO-V6.jpg",
         },
         
 

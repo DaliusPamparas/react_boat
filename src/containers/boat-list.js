@@ -5,7 +5,7 @@ import {selectBoats} from '../actions/index';
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
-
+  import { Link } from 'react-router-dom';
 
 class BoatsList extends Component {
 
@@ -21,7 +21,9 @@ class BoatsList extends Component {
                             <CardTitle>{boat.name}</CardTitle>
                             <CardSubtitle>{boat.price} kr.</CardSubtitle>
                             <CardText>{boat.desc}</CardText>
-                            <Button  onClick={() => this.props.selectBoats (boat)} key={boat.id}>Bygg boat</Button>
+                            <Button  onClick={() => this.props.selectBoats (boat)} key={boat.id}>
+                              <Link to='/motors'>Bygg boat</Link>
+                            </Button>
                         </CardBody>
                     </Card>
                                       
