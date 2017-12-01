@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import{bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-
+import {addMotorToActualBoat} from '../actions/index';
 import {showMotorInfo} from '../actions/index';
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardBody,
@@ -59,11 +59,14 @@ class MotorsList extends Component {
 function mapStateToProps (state){
   return {
      motors: state.motors
+
   };  
 }
 
 function matchDispatchToProps (dispatch){
-    return bindActionCreators({showMotorInfo: showMotorInfo
+    return bindActionCreators({showMotorInfo: showMotorInfo,
+        addMotorToActualBoat: addMotorToActualBoat
+
     }, dispatch)
 }
 
