@@ -24,7 +24,7 @@ export const showMotorInfo = (motor) => {
       payload: motor 
   }
 };
-export const addMotor = (motor) => {
+export const addMotorToActualBoat = (motor) => {
   
   return {
      //function actioncreater 
