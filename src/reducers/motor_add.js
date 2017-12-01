@@ -1,7 +1,7 @@
 export default function (state, action){
     switch (action.type){
         case "Motor_add":
-        return action.payload;
+       // return action.payload;
        
         break;
         default:

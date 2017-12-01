@@ -15,7 +15,8 @@ const allReducers = combineReducers ({
   boats: BoatsReducers,
   motors: MotorsReducers,
   activeboat: ActiveBoat,
-  motor_showinfo: Motor_showinfo  
+  motor_showinfo: Motor_showinfo,
+  motor_add: Motor_add   
 });
 
 
