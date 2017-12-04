@@ -17,16 +17,16 @@ class MotorsList extends Component {
             return (
                
                    
-                <Col xs="4" > 
+                <Col xs="4" key={motor.id} > 
 
-                     <Card >
-                        <CardImg className="motorimg" top  src={motor.img}  alt={motor.name} />
+                     <Card  >
+                        <CardImg className="motorimg" top  src={motor.img}  alt={motor.motor} />
                         <CardBody>
-                            <CardTitle>{motor.name}</CardTitle>
+                            <CardTitle>{motor.motor} name</CardTitle>
                             <CardSubtitle>{motor.priceplus} kr.</CardSubtitle>
                            
-                            <Button className="btn" >Add</Button>
-                            <Button className="btnSecond"  onClick={() => this.props.showMotorInfo (motor)} key={motor.id} >Details</Button>
+                            <Button className="btn"  onClick={() => this.props.addMotorToActualBoat (motor)} key={motor.id + 1} >Add</Button>
+                            <Button className="btnSecond"  onClick={() => this.props.showMotorInfo (motor)}  key={motor.id + 2} >Details</Button>
                             
                         </CardBody>
                     </Card>
@@ -66,6 +66,7 @@ function mapStateToProps (state){
 function matchDispatchToProps (dispatch){
     return bindActionCreators({showMotorInfo: showMotorInfo,
         addMotorToActualBoat: addMotorToActualBoat
+      
 
     }, dispatch)
 }

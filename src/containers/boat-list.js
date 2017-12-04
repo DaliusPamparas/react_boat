@@ -14,14 +14,14 @@ class BoatsList extends Component {
             return (
                
                    
-                <Col xs="3" > 
+                <Col xs="3" key={boat.id} > 
                     <Card >
-                        <CardImg top  src={boat.img} alt={"our boat "+boat.name} />
+                        <CardImg top  src={boat.img} alt={"our boat " + boat.name} />
                         <CardBody>
                             <CardTitle>{boat.name}</CardTitle>
                             <CardSubtitle>{boat.price} kr.</CardSubtitle>
                             <CardText>{boat.desc}</CardText>
-                              <Button  className="btn" onClick={() => this.props.selectBoats (boat)} key={boat.id}>
+                              <Button  className="btn" onClick={() => this.props.selectBoats (boat)}>
                               <Link to='/motors'>Bygg boat</Link>
                             </Button>
                         </CardBody>

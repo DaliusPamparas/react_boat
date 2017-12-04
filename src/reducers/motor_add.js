@@ -1,8 +1,7 @@
-export default function (state=null, action){
+export default function (state= 'activeboat' , action){
     switch (action.type){
         case "Motor_add":
-        return action.payload;
-      
+          return { ...state, activeboat: action.motor }
         break;
         default:
          return state;
