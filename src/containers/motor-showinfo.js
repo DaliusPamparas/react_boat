@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 class Motorshowinfo extends Component {
     render(){
         if (!this.props.motor){
-            return ( <p>Välj button details för att visa info </p>);
+            return ( <p>Välj  button details för att visa info </p>);
         }
   
         return (
