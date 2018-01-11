@@ -13,7 +13,7 @@ class Motorshowinfo extends Component {
                 <h2>
                     {this.props.motor.name}
                 </h2>
-                <br/>
+                <br/> <br/>
                 {this.props.motor.desc}
             </div>
         );
